@@ -1,0 +1,13 @@
+{
+  "relationship_type": "corporate",
+  "context_type": "audit",
+  "jurisdiction": "United States",
+  "legal_framework": "Internal Revenue Code",
+  "verdict_space": [
+    "Fully Compliant",
+    "Minor Infraction - Penalty Applied",
+    "Material Non-Compliance - Fine Levied",
+    "Gross Negligence - Criminal Referral",
+    "Inconclusive - Further Audit Required"
+  ]
+}
