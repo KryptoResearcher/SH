@@ -1,0 +1,12 @@
+{
+  "name": "SH Parameters - 128-bit security",
+  "description": "Recommended parameters for achieving 128-bit security against classical adversaries. For theoretical and benchmarking use only.",
+  "securityLevel": 128,
+  "fieldSize": "115792089237316195423570985008687907853269984665640564039457584007913129639747", // A large prime near 2^256
+  "fieldSizeHex": "0xFFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF",
+  "alpha": "5", // Must be replaced with a verified quadratic non-residue for the chosen field
+  "iterations": 128,
+  "minOpposability": 0.60,
+  "estimatedTraceSizeBytes": 4096, // n * ceil(log2(q)/8) = 128 * 32 = 4096
+  "source": "Based on recommendations from: 'The Semantic Holder (SH): Algebraic Extraction for Legal Opposability', Table 5."
+}
