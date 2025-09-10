@@ -1,0 +1,16 @@
+{
+  "name": "Corporate-Financial-Audit-US",
+  "description": "Relational context for corporate financial auditing under US jurisdiction.",
+  "relationshipType": "corporate",
+  "contextType": "audit",
+  "jurisdiction": "US",
+  "legalFramework": "Internal Revenue Code, SEC Regulations",
+  "verdictSpace": [
+    {"id": "compliant", "description": "No irregularities detected."},
+    {"id": "minor-infraction", "description": "Minor procedural non-compliance, penalty applicable."},
+    {"id": "material-non-compliance", "description": "Material misstatement found, fine levied."},
+    {"id": "fraud-suspected", "description": "Evidence suggestive of fraudulent activity, criminal referral initiated."},
+    {"id": "inconclusive", "description": "Insufficient evidence to reach a determination, further audit required."}
+  ],
+  "complexityLevel": "high"
+}

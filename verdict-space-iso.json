@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VerdictSpace",
+  "description": "A standardized template for defining a space of legal verdicts for use with the Semantic Holder primitive.",
+  "type": "object",
+  "properties": {
+    "verdictSpaceId": {
+      "type": "string",
+      "description": "Unique identifier for this verdict space (e.g., a URI)."
+    },
+    "issuingAuthority": {
+      "type": "string",
+      "description": "The legal body or institution that defines this space."
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "The legal jurisdiction this space applies to (e.g., 'EU', 'US-NY')."
+    },
+    "legalDomain": {
+      "type": "string",
+      "description": "The domain of law (e.g., 'GDPR-Compliance', 'UCC-Sales')."
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of this verdict space definition."
+    },
+    "verdicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "A unique machine-readable identifier for the verdict."
+          },
+          "description": {
+            "type": "string",
+            "description": "A human-readable description of the verdict."
+          }
+        },
+        "required": ["id", "description"]
+      }
+    }
+  },
+  "required": ["verdictSpaceId", "issuingAuthority", "jurisdiction", "legalDomain", "verdicts"]
+}
