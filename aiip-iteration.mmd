@@ -1,0 +1,9 @@
+%% Mermaid diagram source: AIIP Iteration Process
+graph LR
+    A[State x_i] --> B[Square: x_i²]
+    B --> C[Add Alpha: x_i² + α]
+    C --> D[Mod q: mod field size]
+    D --> E[State x_{i+1}]
+
+    style A fill:#f9f,stroke:#333
+    style E fill:#ccf,stroke:#333

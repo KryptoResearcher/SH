@@ -1,0 +1,20 @@
+%% Mermaid diagram source: SH High-Level Workflow
+flowchart TD
+    A[Input Hash h] --> B[AIIP Iteration]
+    B --> C["Trace: [h, f(h), f²(h), ..., fⁿ(h)]"]
+    C --> D{"Semantic Mapping φ"}
+    D --> E[Verdict Space V_J]
+    E --> F[Legal Interpretation L]
+    C --> G[STARK Prover]
+    G --> H[STARK Proof π]
+    F --> I{{Final Output}}
+    H --> I
+    I --> J["Verify(L, π)"]
+
+    subgraph "Relational Context R"
+        E
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style I fill:#ccf,stroke:#333,stroke-width:3px
+    style J fill:#9f9,stroke:#333,stroke-width:2px
