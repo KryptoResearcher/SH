@@ -1,0 +1,57 @@
+graph TB
+    subgraph "SH Primitive"
+        direction TB
+        SH[Opposability<br>Semantic Holder]
+    end
+
+    subgraph "SH Core Components"
+        direction TB
+        AE[Algebraic Extraction]
+        PI[Polynomial Iteration]
+        SM[Semantic Mapping φ]
+        VE[Verifiable Explanation]
+    end
+
+    subgraph "Security Foundations"
+        direction TB
+        AIIP[Affine Iterated Inversion Problem]
+        MQ[MQ Problem Hardness]
+        HCDLP[High-Genus HCDLP]
+        STARK[STARK Proof System]
+    end
+
+    subgraph "Applications"
+        direction TB
+        LSC[Legal Smart Contracts]
+        RC[Regulatory Compliance]
+        DEA[Digital Evidence Authentication]
+        XJ[Cross-Jurisdictional Operations]
+    end
+
+    SH --> AE
+    SH --> PI
+    SH --> SM
+    SH --> VE
+    
+    AE --> AIIP
+    PI --> AIIP
+    SM --> AIIP
+    VE --> STARK
+    
+    AIIP --> MQ
+    AIIP --> HCDLP
+    
+    SH --> LSC
+    SH --> RC
+    SH --> DEA
+    SH --> XJ
+
+    classDef sh fill:#e1f5fe
+    classDef core fill:#f3e5f5
+    classDef security fill:#fff3e0
+    classDef apps fill:#e8f5e8
+    
+    class SH sh
+    class AE,PI,SM,VE core
+    class AIIP,MQ,HCDLP,STARK security
+    class LSC,RC,DEA,XJ apps
