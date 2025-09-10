@@ -1,0 +1,10 @@
+{
+  "name": "Small Parameters - Development Testing",
+  "description": "Small parameter sets for rapid development and testing of benchmarks.",
+  "field_sizes": [10007, 100003, 1000003],
+  "iteration_counts": [10, 50, 100],
+  "alpha_values": [5, 7, 11],
+  "verdict_space_sizes": [5, 10, 20],
+  "runs_per_config": 3,
+  "warmup_runs": 2
+}

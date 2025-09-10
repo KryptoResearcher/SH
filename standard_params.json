@@ -1,0 +1,10 @@
+{
+  "name": "Standard Parameters - Realistic Assessment",
+  "description": "Larger parameter sets for more realistic performance assessment.",
+  "field_sizes": [1000003, 10000019, 100000007],
+  "iteration_counts": [100, 500, 1000],
+  "alpha_values": [5],
+  "verdict_space_sizes": [10, 50, 100],
+  "runs_per_config": 5,
+  "warmup_runs": 3
+}
